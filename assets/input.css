@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+.header-top .container {
+    @apply sm:w-[1322px] mx-auto px-4;
+}
+
+.container {
+    @apply sm:w-[1050px] mx-auto px-10 sm:px-4;
+}
+
+.heading-color {
+    @apply text-[#252B42];
+}
+
+.p-color {
+    @apply text-[#737373];
+}
+
+.hover {
+    @apply hover:text-red-600
+}
+
+.heading-style {
+    @apply text-[40px] font-bold leading-14 tracking-[0.2px];
+}
+
+.p-style {
+    @apply text-sm leading-5 font-medium tracking-[0.2px];
+}
+
+.overlay {
+    @apply after:absolute after:inset-0 after:bg-black after:opacity-30 after:content-[''] after:w-full after:h-full after:block
+}
