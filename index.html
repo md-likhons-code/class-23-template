@@ -15,12 +15,12 @@
 </head>
 <body>
     
-    <header>
-        <div class="header-top">
+    <header class="sticky top-0 left-0 z-50">
+        <div class="header-top absolute top-0 left-0 right-0 mx-auto duration-300">
             <div class="container">
                 <div class="flex py-10 items-center">
                     <div class="w-6/12 sm:w-3/12 text-start xl:text-center">
-                        <img class="inline-block" src="images/Divestic.png" alt="">
+                        <img class="inline-block ml-0 xl:ml-5 2xl:ml-[50px]" src="images/Divestic.png" alt="">
                     </div>
                     <div class="w-7/12 hidden sm:block">
                         <ul class="flex">
@@ -86,38 +86,38 @@
         </div>
 
         <!-- mobile-menu -->
-        <nav class="mobile-menu sm:hidden hidden">
-            <ul class="text-center bg-white">
+        <nav class="mobile-menu absolute top-[104px] left-0 w-full sm:hidden hidden">
+            <ul class="text-center bg-[#f7f7f7] shadow-md">
                 <li class="py-2"><a class="block p-color font-semibold hover" href="">Home</a></li>
                 <li class="py-2"><a class="block p-color font-semibold hover" href="">Product</a></li>
                 <li class="py-2"><a class="block p-color font-semibold hover" href="">Pricing</a></li>
                 <li class="py-2"><a class="block p-color font-semibold hover" href="">Contact</a></li>
             </ul>
         </nav>
-        
-        <div class="py-[125px]">
-            <div class="container">
-                <div class="w-full md:w-10/12 lg:w-8/12">
-                    <h1 class="text-5xl text-center sm:text-start sm:text-[58px] leading-14 sm:leading-20 tracking-wide heading-color font-extrabold pr-0 sm:pr-20 lg:pr-32 xl:pr-36">EMPOWER YOUR BUSINESS</h1>
-                    <p class="my-10 sm:my-9 text-xl text-center sm:text-start p-color leading-[30px] sm:leading-7 px-12 sm:pr-56 lg:pr-72  tracking-[0.2px]">We know how large objects will act, but things on a small scale just do not act that way.</p>
-                    <div class="flex justify-center sm:justify-start gap-2.5">
-                        <button class="bg-[#FFA62B] hover:bg-[#2091f9] duration-300 font-bold px-6 py-1.5 text-white text-sm leading-7 rounded-full tracking-[0.2px] cursor-pointer">
-                            Get Quote Now
-                        </button>
-                        <button class="border hover:bg-[#2091f9] hover:text-white duration-300 font-bold border-[#2091F9] px-6 py-1.5 text-[#2091F9] text-sm leading-7 rounded-full tracking-[0.2px] cursor-pointer">
-                            Learn More
-                        </button>
-                    </div>
+    </header>
+
+    <div class="pb-[125px] pt-[229px] background">
+        <div class="container">
+            <div class="w-full md:w-10/12 lg:w-8/12">
+                <h1 class="text-5xl text-center sm:text-start sm:text-[58px] leading-14 sm:leading-20 tracking-wide heading-color font-extrabold pr-0 sm:pr-20 lg:pr-32 xl:pr-36">EMPOWER YOUR BUSINESS</h1>
+                <p class="my-10 sm:my-9 text-xl text-center sm:text-start p-color leading-[30px] sm:leading-7 px-12 sm:px-0 sm:pr-56 lg:pr-72  tracking-[0.2px]">We know how large objects will act, but things on a small scale just do not act that way.</p>
+                <div class="flex flex-col sm:flex-row justify-center sm:justify-start gap-2.5 px-10 sm:px-0">
+                    <button class="bg-[#FFA62B] hover:bg-[#2091f9] duration-300 font-bold px-6 py-1.5 text-white text-sm leading-7 rounded-full tracking-[0.2px] cursor-pointer">
+                        Get Quote Now
+                    </button>
+                    <button class="border hover:bg-[#2091f9] hover:text-white duration-300 font-bold border-[#2091F9] px-6 py-1.5 text-[#2091F9] text-sm leading-7 rounded-full tracking-[0.2px] cursor-pointer">
+                        Learn More
+                    </button>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
 
     <div class="py-[100px]">
         <div class="container">
             <div class="py-11">
-                <h2 class="heading-style heading-color pr-10 sm:pr-0">WHY CHOOSE US</h2>
-                <p class="p-style p-color">Problems trying to resolve the conflict between <br> 
+                <h2 class="heading-style heading-color">WHY <br class="sm:hidden block"> CHOOSE US</h2>
+                <p class="p-style p-color">Problems trying to resolve the conflict between <br class="sm:block hidden"> 
                     the two major realms of Classical physics: Newtonian mechanics </p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -198,8 +198,8 @@
             </div>
             <div class="flex flex-col sm:flex-row items-center gap-12 md:gap-24 lg:gap-[120px]">
                 <div class="w-full sm:w-5/12 lg:w-7/12 relative overlay">
-                    <img class="w-full h-full relative hidden lg:block" src="images/popup-cover.jpg" alt="">
-                    <img class="w-full h-full relative block lg:hidden" src="images/media bg-cover.png" alt="">
+                    <img class="w-full h-full hidden lg:block" src="images/popup-cover.jpg" alt="">
+                    <img class="w-full h-full block lg:hidden" src="images/media bg-cover.png" alt="">
                     <a class="bg-[#00A0C1] transform hover:scale-110 duration-300 h-24 w-24 rounded-full grid place-items-center absolute inset-0 m-auto z-10 cursor-pointer popup" href="https://www.youtube.com/embed/Ir3ZxIadx7U?si=pOZFVHgdEh1rONRk">
                         <svg width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.300049 0.799805L24.3 15.1998L0.300049 29.5998V0.799805Z" fill="white"/>
@@ -238,7 +238,7 @@
         <div class="container">
             <div class="mb-[50px] text-center">
                 <h2 class="heading-style text-white mb-2.5 px-5 sm:px-0">What Clients Say</h2>
-                <p class="p-style text-white">Problems trying to resolve the conflict between <br> the two major realms of Classical physics: Newtonian mechanics </p>
+                <p class="p-style text-white">Problems trying to resolve the conflict between <br class="sm:block hidden"> the two major realms of Classical physics: Newtonian mechanics </p>
             </div>
 
             <div class="slider">
@@ -358,9 +358,9 @@
             </div>
 
 
-            <div class="single-slide py-[30px] px-15 bg-white sm:hidden block max-w-3/4 mx-auto mb-[30px]">
-                <div class="flex gap-6">
-                    <div class="min-w-max -ml-[118px]">
+            <div class="single-slide py-[30px] pr-4 pl-15 sm:px-15 bg-white sm:hidden block max-w-3/4 mx-auto mb-[30px]">
+                <div class="flex gap-3 sm:gap-6">
+                    <div class="min-w-max -ml-28 sm:-ml-[118px]">
                         <img src="images/circle-box.png" alt="">
                     </div>
                     <div class="">
@@ -392,9 +392,9 @@
                 <p class="p-color p-style">This proved to be impossible using the traditional concepts of space and time. Einstein developed a new view of time first and then space. This proved to be impossible using the traditional concepts of space and time. Einstein developed a new view of time first and then space.</p>
             </div>
 
-            <div class="single-slide py-[30px] px-15 bg-white sm:hidden block max-w-3/4 mx-auto mb-[30px]">
-                <div class="flex gap-6">
-                    <div class="min-w-max -ml-[118px]">
+            <div class="single-slide py-[30px] pr-4 pl-15 sm:px-15 bg-white sm:hidden block max-w-3/4 mx-auto mb-[30px]">
+                <div class="flex gap-3 sm:gap-6">
+                    <div class="min-w-max -ml-28 sm:-ml-[118px]">
                         <img src="images/profile-2.png" alt="">
                     </div>
                     <div class="">
@@ -426,9 +426,9 @@
                 <p class="p-color p-style">This proved to be impossible using the traditional concepts of space and time. Einstein developed a new view of time first and then space. This proved to be impossible using the traditional concepts of space and time. Einstein developed a new view of time first and then space.</p>
             </div>
 
-            <div class="single-slide py-[30px] px-15 bg-white sm:hidden block max-w-3/4 mx-auto">
-                <div class="flex gap-6">
-                    <div class="min-w-max -ml-[118px]">
+            <div class="single-slide py-[30px] pr-4 pl-15 sm:px-15 bg-white sm:hidden block max-w-3/4 mx-auto">
+                <div class="flex gap-3 sm:gap-6">
+                    <div class="min-w-max -ml-28 sm:-ml-[118px]">
                         <img src="images/profile-2.png" alt="">
                     </div>
                     <div class="">
@@ -466,7 +466,7 @@
         <div class="container">
             <div class="mb-[50px] text-center">
                 <h2 class="headign-color heading-style mb-2.5">Meet Our Team</h2>
-                <p class="p-color p-style">Problems trying to resolve the conflict between <br> the two major realms of Classical physics: Newtonian mechanics </p>
+                <p class="p-color p-style">Problems trying to resolve the conflict between <br class="hidden sm:block"> the two major realms of Classical physics: Newtonian mechanics </p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[30px]">
                 <div class="bg-white py-[30px] px-10 text-center">
@@ -513,11 +513,7 @@
             <div class="flex flex-col md:flex-row items-center gap-[30px] mb-[50px]">
                 <div class="w-full md:w-7/12 py-[50px]">
                     <h2 class="heading-style text-white mb-[15px] pr-1">We Have Branches All Over The World</h2>
-                    <p class="p-style text-white pr-28">The gradual accumulation of information about atomic and 
-                        small-scale behaviour during the first quarter of the 20th 
-                        century, which gave some indications about how small things 
-                        do behave, produced an increasing confusion which was 
-                        Heisenberg, and Born.</p>
+                    <p class="p-style text-white pr-0 lg:pr-28">The gradual accumulation of information about atomic and small-scale behaviour during the first quarter of the 20th century, which gave some indications about how small things do behave, produced an increasing confusion which was Heisenberg, and Born.</p>
                 </div>
                 <div class="w-full md:w-5/12">
                     <img class="h-full w-full" src="images/earth.png" alt="">
@@ -534,7 +530,7 @@
                         <img class="hidden md:block" src="images/form.jpg" alt="">
                         <img class="block md:hidden w-full" src="images/mobile-form.jpg" alt="">
                     </div>
-                    <div class="w-full py-10 px-[50px]">
+                    <div class="w-full py-10 px-6 sm:px-[50px]">
                         <h2 class="heading-color text-4xl sm:text-[40px] font-bold leading-12 sm:leading-14 tracking-[0.2px] mb-10">Get A Free Quote Here</h2>
                         <form action="">
                             <div class="mb-3">
@@ -577,7 +573,7 @@
     <footer>
         <div class="py-20">
             <div class="container">
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[30px] px-0 lg:px-10">
+                <div class="footer-grid grid grid-cols-2 lg:grid-cols-4 gap-[30px] px-0 lg:px-10">
                     <div class="mb-[30px] sm:mb-0">
                         <h3 class="heading-color font-bold text-2xl leading-8 tracking-[0.1px]">Get In Touch</h3>
                         <p class="p-color p-style my-5">the quick fox jumps over the lazy dog</p>
